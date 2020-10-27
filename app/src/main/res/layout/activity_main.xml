@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="14dp">
+
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuIconLayout">
+
+        <ImageView
+            android:id="@+id/menu_button"
+            android:layout_width="38dp"
+            android:layout_height="44dp"
+            app:srcCompat="@drawable/menu_icon"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="centerCrop"
+             android:src="@drawable/user_image"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+ </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/questrial"
+            android:paddingBottom="3dp"
+            android:text="Hi Daniel,"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/questrial"
+            android:paddingTop="3dp"
+            android:text="have a good day!"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/cardview_background"
+       android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shipment_status"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/questrial"
+                    android:text="Shipment Status"
+                    android:textColor="#C2FFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/questrial"
+                    android:text="07May2020"
+                    android:textColor="#C2FFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/shipment_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/shipment_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:paddingBottom="2dp"
+                android:paddingRight="16dp"
+                app:srcCompat="@drawable/shipment_icon" />
+
+            <RelativeLayout
+                android:id="@+id/shipment_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shipment_icon">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/questrial"
+                        android:text="You have 14 delivery today"
+                        android:textColor="#C2FFFF"
+                        android:paddingBottom="6dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/questrial"
+                        android:text="12 unfinished delivery"
+                        android:textColor="#C2FFFF"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/shipping_Progress"
+            style="@style/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:progress="30"
+            android:progressDrawable="@drawable/progress_bar_drawable" />
+
+
+        <LinearLayout
+            android:id="@+id/submit_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Know Your Shipment Details"
+                android:fontFamily="@font/questrial"
+                android:textSize="14sp"
+                android:textColor="#C2FFFF"
+                android:paddingRight="14dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/your_details"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/right_arrow"
+                android:scaleType="centerCrop"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="2dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+   >
+
+    <TextView
+        android:id="@+id/day_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Today Mon 4 Apr 2020"
+        android:letterSpacing="0.02"
+        android:paddingLeft="2dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/questrial"
+        android:layout_alignParentStart="true"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/calender_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="April 2020 "
+        android:textSize="10sp"
+        android:drawableEnd="@drawable/arrow"
+        android:gravity="center"
+        android:fontFamily="@font/questrial"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/day_text_view"
+        />
+
+
+   <!-- <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+-->
+
+
+
+
+</RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/list_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+
+</LinearLayout>
+
+
+

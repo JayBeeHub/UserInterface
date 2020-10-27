@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">UserInterface</string>
+    <string name="date_format">Today %s</string>
+
+    <string-array name="delivery_type">
+        <item>Standard</item>
+        <item>Premium</item>
+        <item>Express</item>
+        <item>Standard</item>
+        <item>Premium</item>
+        <item>Express</item>
+        <item>Standard</item>
+        <item>Premium</item>
+        <item>Express</item>
+        <item>Standard</item>
+
+    </string-array>
+
+    <string-array name="delivery_description">
+        <item>Mark Picked up</item>
+        <item>Mark Delivered</item>
+        <item>Mark Picked up</item>
+        <item>Mark Delivered</item>
+        <item>Mark Picked up</item>
+        <item>Mark Delivered</item>
+        <item>Mark Picked up</item>
+        <item>Mark Delivered</item>
+        <item>Mark Picked up</item>
+        <item>Mark Delivered</item>
+
+    </string-array>
+
+    <string-array name="delivery_time">
+        <item>Delivery time: 07 May 2020 | 1:00pm</item>
+        <item>Delivery time: 08 May 2020 | 2:00pm</item>
+        <item>Delivery time: 10 May 2020 | 5:00pm</item>
+        <item>Delivery time: 12 May 2020 | 9:00pm</item>
+        <item>Delivery time: 16 May 2020 | 1:00pm</item>
+        <item>Delivery time: 19 May 2020 | 6:00pm</item>
+        <item>Delivery time: 21 May 2020 | 9:00pm</item>
+        <item>Delivery time: 25 May 2020 | 10:00pm</item>
+        <item>Delivery time: 28 May 2020 | 12:00am</item>
+        <item>Delivery time: 30 May 2020 | 2:00am </item>
+
+    </string-array>
+
+
+
+</resources>
